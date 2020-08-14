@@ -3,3 +3,6 @@ from .models import Post
 
 
 admin.site.register(Post)
+
+
+#주석주석
