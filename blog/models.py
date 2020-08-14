@@ -4,9 +4,9 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=30)
-    content = models.TextField()
+    content = models.TextField(max_length=10000000000000000,null=True, default='')
 
-    created = models.DateTimeField()
+    created = models.DateTimeField(null=True, default='')
 
     author = models.ForeignKey(User,on_delete=models.CASCADE)
 
