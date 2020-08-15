@@ -12,3 +12,4 @@ def index(request):
             'posts' : posts
         }
     )
+
